@@ -1,0 +1,15 @@
+﻿@model Assignment4_N01390572_A_KunalSailor.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+
+
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back To Teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.TeacherId">Delete</a>
+    </nav>
+    <h2>@Model.TeacherFname @Model.TeacherLname</h2>
+    <p style="font-style: italic;">EmployeeNumber: @Model.employeenumber</p>
+</div>
